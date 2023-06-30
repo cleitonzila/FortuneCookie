@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Including project fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Including the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Including the JavaScript script with the 'defer' attribute -->
+    <script src="script.js" defer></script>
+    <title>Fortune Cookie</title>
+</head>
+<body>
+    <!-- Initial screen before opening the cookie -->
+    <div class="screenClose">
+        <h2>What is your fortune today?</h2>
+        <p>Open the cookie and find out!</p>
+        <img class="cookieBtn" src="fortune-cookie.svg">
+    </div>
+    <!-- Screen shown after opening the cookie -->
+    <div class="screenOpen hide">
+        <h2>Here is your fortune for today:</h2>
+        <p class="message"></p>
+        <img src="opened-cookie.svg">
+        <button id="openNewOne">Open another cookie</button>
+    </div>
+</body>
+</html>
